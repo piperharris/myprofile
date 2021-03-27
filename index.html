@@ -11,82 +11,84 @@
       }
     </style>
 
-      <style>
-      body {
-        font-family: Arial;
-      }
+    <head>
 
-      .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color:#b8e7ff;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      }
+    <style>
+    body {
+      font-family: Monospace, Monaco;
+    }
 
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #ffffff;
-        display: block;
-        transition: 0.3s;
-      }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #b8e7ff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-      .sidenav a:hover {
-        color: #f1f1f1;
-      }
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
 
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 50px;
-        margin-left: 50px;
-      }
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
 
-      #main {
-        transition: margin-left .5s;
-        padding: 16px;
-      }
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-      @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 45px;}
-      }
-      </style>
-      </head>
-      <body>
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Personal Information</a>
-        <a href="interest.html">Interest in IT</a>
-        <a href="idealjob.html">Ideal Job</a>
-        <a href="profile.html">Personal Profile</a>
-        <a href="project.html">Project Idea</a>
-      </div>
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    </head>
+    <body>
 
-      <div id="main">
-    <span style="font-size:30px;cursor:pointer;font:monaco" onclick="openNav()">&#9776; menu</span>
-      </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Personal Information</a>
+      <a href="interest.html">Interest in IT</a>
+      <a href="idealjob.html">Ideal Job</a>
+      <a href="profile.html">Personal Profile</a>
+      <a href="project.html">Project Idea</a>
+    </div>
 
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer;font:monaco" onclick="openNav()">&#9776; menu</span>
+    </div>
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
-      </script>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
 <style>
 body, html {
   height: 100%;
