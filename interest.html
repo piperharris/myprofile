@@ -87,15 +87,62 @@
 <body>
   <style>
   body {
-    font-family: Monospace, Monaco;
+    font-family: Monospace, "Monaco";
   }
 </style>
 
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.left {
+  width: 70%;
+}
+
+.column.right {
+    width: 30%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <style>
+    font-family; Monospace, "Monaco";
+</style>
+
 <h1 style="background-color:#b8e7ff";>Interest in Information Technology</h1>
+<div class="row">
+
+  <div class="column middle">
 <p>It is really hard to pinpoint when exactly my interest in IT started, as I have always been intrigued in anything technology related. In primary school I applied to be an ICT monitor and was selected due to my natural computer skills I had picked up from playing around. Numerous times whilst in high school, I put my name down to attend programming incursions and stem excursions which focused majorly on IT. Though apart from this, my school didn’t have any IT or computer science classes in the curriculum. </p>
 <p>    </p>
 <p>RMIT has a good reputation, especially in the technology fields of study and has an appealing Information Technology course. I wanted to be introduced to the area of study better, and thought that RMIT would be the perfect place to learn the basics as well as build on that into further and deeper knowledge. </p>
-
+</div>
   </body>
 
 
