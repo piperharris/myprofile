@@ -81,25 +81,67 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
-<body>
-<h1 style="background-color:#b8e7ff";>Project Idea: [PROJECT NAME]</h1>
+    <head>
+    <style>
+    .accordion {
+      background-color: #ffffff;
+      color: #95c1cf;
+      cursor: pointer;
+      padding: 18px;
+      width: 51%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
 
-<h2 style="color:#95c1cf";>Overview</h2>
+    .active, .accordion:hover {
+      background-color: #e1f6fc;
+    }
 
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    </style>
+    </head>
+    <body>
 
-<h2 style="color:#95c1cf";>Motivation</h2>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
-<h2 style="color:#95c1cf";>Description</h2>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-<h2 style="color:#95c1cf";>Tools and Technologies</h2>
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
 
+    </body>
 
-<h2 style="color:#95c1cf";>Skills Required</h2>
-
-
-<h2 style="color:#95c1cf";>Outcome</h2>
-
-</body>
 </html>
